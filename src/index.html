@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
@@ -25,7 +25,278 @@
     <div class="wrapper" id="wrapper">
       <%= _.template(require('./parts/header.html'))() %>
 
-      <div class="app" id="app"></div>
+      <main class="app" id="app">
+          <section class="info">
+              <header class="info__head">
+                  <div class="container">
+                      <h1 class="section-title color-white">
+                          Набір <span class="color-orange-300">2 гольфів</span><br>
+                          <span class="weight-500">по 250 грн / шт</span>
+                      </h1>
+                  </div>
+              </header>
+              <div class="container">
+                  <ul class="info__images">
+                      <li>
+                          <picture>
+                              <img src="assets/images/info/img_01.jpg" alt="info img">
+                          </picture>
+                      </li>
+                      <li>
+                          <picture>
+                              <img src="assets/images/info/img_02.jpg" alt="info img">
+                          </picture>
+                      </li>
+                  </ul>
+                  <ul class="info__text">
+                      <li class="info__text-item">
+                          <p class="text">
+                              <span class="color-orange-500">Розпродаж</span> 2023
+                          </p>
+                          <span class="icon size-32 color-orange-700">
+                              <svg>
+                                  <use xlink:href="assets/images/icons/sprites.svg#fire"></use>
+                              </svg>
+                          </span>
+                      </li>
+                      <li class="info__text-item">
+                          <p class="old-price">500 грн</p>
+                          <p class="price">
+                              250 грн
+                          </p>
+                          <span class="sale">-50%</span>
+                      </li>
+                  </ul>
+              </div>
+              <footer class="info__footer">
+                  <div class="container">
+                      <p class="caption">До кінця акції залишилося:</p>
+                      <ul class="countdown" data-countdown>
+                          <li class="countdown__item" data-countdown-item="hours">
+                              <span class="countdown__number">20</span>
+                              <span class="countdown__caption">годин</span>
+                          </li>
+                          <li class="countdown__item" data-countdown-item="minutes">
+                              <span class="countdown__number">45</span>
+                              <span class="countdown__caption">хвилин</span>
+                          </li>
+                          <li class="countdown__item" data-countdown-item="seconds">
+                              <span class="countdown__number">17</span>
+                              <span class="countdown__caption">секунд</span>
+                          </li>
+                      </ul>
+                      <a href="/" class="btn">Замовити</a>
+                  </div>
+              </footer>
+          </section>
+          <section class="advantages bg-grey-50 section-padding">
+              <div class="container">
+                  <h2 class="section-title">
+                      Переваги <span class="color-orange-300">Нашої</span> продукції
+                  </h2>
+                  <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                          <span class="icon size-36 color-orange-500">
+                              <svg>
+                                  <use xlink:href="assets/images/icons/sprites.svg#number-1"></use>
+                              </svg>
+                          </span>
+                          <p>
+                              <span class="weight-600">Ми — виробник!</span><br>
+                              Хмельницька область
+                          </p>
+                      </li>
+                      <li class="advantages__list-item">
+                          <span class="icon size-36 color-orange-500">
+                              <svg>
+                                  <use xlink:href="assets/images/icons/sprites.svg#number-2"></use>
+                              </svg>
+                          </span>
+                          <p>
+                              <span class="weight-600">Не підійшов розмір?</span><br>
+                              Замінимо на потрібний!
+                          </p>
+                      </li>
+                      <li class="advantages__list-item">
+                          <span class="icon size-36 color-orange-500">
+                              <svg>
+                                  <use xlink:href="assets/images/icons/sprites.svg#number-3"></use>
+                              </svg>
+                          </span>
+                          <p>
+                              <span class="weight-600">Повернення</span><br>
+                              Протягом 14 днів!
+                          </p>
+                      </li>
+                      <li class="advantages__list-item">
+                          <span class="icon size-36 color-orange-500">
+                              <svg>
+                                  <use xlink:href="assets/images/icons/sprites.svg#number-4"></use>
+                              </svg>
+                          </span>
+                          <p>
+                              <span class="weight-600">Обмін</span><br>
+                              Без додаткових оплат!
+                          </p>
+                      </li>
+                      <li class="advantages__list-item">
+                          <span class="icon size-36 color-orange-500">
+                              <svg>
+                                  <use xlink:href="assets/images/icons/sprites.svg#number-5"></use>
+                              </svg>
+                          </span>
+                          <p>
+                              <span class="weight-600">Бажаєте приміряти?</span><br>
+                              Відправимо. <span class="color-orange-500 weight-500">Наложений платіж</span>
+                          </p>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+          <section class="size section-padding">
+              <div class="container">
+                  <h2 class="section-title color-white">
+                      <span class="color-orange-300">Розміри</span> гольфу до набору
+                  </h2>
+                  <ul class="size__tables">
+                      <li>
+                          <table class="table">
+                              <thead>
+                              <tr class="table__tr">
+                                  <th class="table__th">
+                                      Розмір
+                                  </th>
+                                  <th class="table__th">
+                                      Об’єм
+                                  </th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr class="table__tr">
+                                  <td class="table__td">
+                                      M / 48
+                                  </td>
+                                  <td class="table__td">
+                                      88-99
+                                  </td>
+                              </tr>
+                              <tr class="table__tr">
+                                  <td class="table__td">
+                                      L / 50
+                                  </td>
+                                  <td class="table__td">
+                                      100-105
+                                  </td>
+                              </tr>
+                              <tr class="table__tr">
+                                  <td class="table__td">
+                                      XL / 52
+                                  </td>
+                                  <td class="table__td">
+                                      106-108
+                                  </td>
+                              </tr>
+                              <tr class="table__tr">
+                                  <td class="table__td">
+                                      2XL / 54
+                                  </td>
+                                  <td class="table__td">
+                                      110-114
+                                  </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </li>
+                      <li>
+                          <table class="table">
+                              <thead>
+                              <tr class="table__tr">
+                                  <th class="table__th" colspan="2">
+                                      +35 грн / 1 гольф
+                                  </th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr class="table__tr">
+                                  <td class="table__td">
+                                      3XL / 56
+                                  </td>
+                                  <td class="table__td">
+                                      114-116
+                                  </td>
+                              </tr>
+                              <tr class="table__tr">
+                                  <td class="table__td">
+                                      4XL / 58
+                                  </td>
+                                  <td class="table__td">
+                                      116-120
+                                  </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </li>
+                  </ul>
+                  <div class="gallery swiper">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="gallery__item">
+                                  <picture>
+                                      <img src="assets/images/gallery/img_01.jpg" alt="Темно-синій гольф">
+                                  </picture>
+                                  <span class="gallery__item-caption">
+                                      Темно-синій
+                                  </span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="gallery__item">
+                                  <picture>
+                                      <img src="assets/images/gallery/img_01.jpg" alt="Темно-синій гольф">
+                                  </picture>
+                                  <span class="gallery__item-caption">
+                                      Жовтий
+                                  </span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="gallery__item">
+                                  <picture>
+                                      <img src="assets/images/gallery/img_01.jpg" alt="Темно-синій гольф">
+                                  </picture>
+                                  <span class="gallery__item-caption">
+                                      Рожевий
+                                  </span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="gallery__item">
+                                  <picture>
+                                      <img src="assets/images/gallery/img_01.jpg" alt="Темно-синій гольф">
+                                  </picture>
+                                  <span class="gallery__item-caption">
+                                      Хакі
+                                  </span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="gallery__item">
+                                  <picture>
+                                      <img src="assets/images/gallery/img_01.jpg" alt="Темно-синій гольф">
+                                  </picture>
+                                  <span class="gallery__item-caption">
+                                      Білий
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                  </div>
+              </div>
+          </section>
+      </main>
 
       <%= _.template(require('./parts/footer.html'))() %>
     </div>

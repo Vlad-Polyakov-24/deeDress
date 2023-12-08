@@ -67,6 +67,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "include-media": "^2.0.0"
+    "include-media": "^2.0.0",
+    "swiper": "^11.0.5"
   }
 }

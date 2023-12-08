@@ -4,9 +4,7 @@ $images: "../images/";
 
 /* fonts */
 
-$default-fonts: "Noto Sans JP", hiragino sans, "ヒラギノ角ゴシック", hiragino kaku gothic pron,
-  "ヒラギノ角ゴ ProN W3", roboto, "Droid Sans", yugothic, "游ゴシック", meiryo, "メイリオ", verdana,
-  "ＭＳ Ｐゴシック", sans-serif;
+$default-fonts: "Inter", roboto, sans-serif;
 $breakpoints: (
   xs: 375px,
   sm: 576px,
@@ -18,13 +16,28 @@ $breakpoints: (
 
 /* container size/gap */
 
-$container-gap: 20px;
-$container-width: 1280px;
+$container-gap: 15px;
+$container-width: 600px;
 
 /* colors */
 
 $white: #fff;
 $black: #000;
+$dark: #1C1C1C;
+$orange-300: #FB791B;
+$orange-400: #EE6E11;
+$orange-500: #E56000;
+$orange-600: #CD5600;
+$orange-700: #E66000;
+$grey-50: #F9F9F9;
+$grey-100: #EEEEEB;
+$grey-150: #D9D9D9;
+$grey-200: #C8C8C8;
+$grey-600: #8E8E8E;
+$grey-700: #696969;
+$grey-800: #535353;
+$grey-900: #282B30;
+$red: #DE0000;
 
 /* transitions */
 

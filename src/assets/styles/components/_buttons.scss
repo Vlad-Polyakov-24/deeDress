@@ -1,0 +1,28 @@
+.btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 10px;
+  border-radius: 10px;
+  background-color: $orange-500;
+  color: $white;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $orange-400;
+    }
+  }
+
+  &:active {
+    background-color: $orange-600;
+  }
+}
