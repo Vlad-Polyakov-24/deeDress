@@ -1,0 +1,129 @@
+.form {
+  position: relative;
+
+  &.sending {
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+    &:before {
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      background-color: rgba(0, 0, 0, .6);
+      border-radius: 10px;
+    }
+    &:after {
+      z-index: 3;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("#{$images}icons/sending-icon.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: rotate 4s linear infinite;
+    }
+  }
+
+  &__group {
+    position: relative;
+    display: grid;
+    gap: 8px;
+
+    &[data-required] {
+      .form__label {
+        &:before {
+          content: '*';
+          display: inline-block;
+          margin-right: 3px;
+          font-size: inherit;
+          line-height: inherit;
+          font-weight: 700;
+          color: $red;
+        }
+      }
+    }
+
+    &.invalid-group {
+      .form__input {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 13px;
+          transform: translateY(-50%);
+          width: 24px;
+          height: 24px;
+          background-image: url('#{$images}icons/error-icon.svg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .input {
+        border: 1px solid $red;
+      }
+    }
+
+    + .form__group {
+      margin-top: 24px;
+    }
+    + .btn {
+      margin-top: 32px;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    padding: 13px 10px;
+    border-radius: 10px;
+    border: 1px solid $grey-700;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0 0 0 1px $grey-700;
+      }
+    }
+  }
+
+  &__error-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $red;
+  }
+}
+
+@keyframes rotate {
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

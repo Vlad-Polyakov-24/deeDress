@@ -1,7 +1,7 @@
 .countdown {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 40px;
   width: 100%;
   max-width: 300px;
   margin-left: auto;
@@ -40,7 +40,7 @@
       content: ':';
       position: absolute;
       top: 0;
-      left: calc(100% + 20px);
+      left: calc(100% + 15px);
       font-size: inherit;
       line-height: inherit;
       font-weight: inherit;

@@ -1,0 +1,16 @@
+[data-accordion-item="open"] {
+  .faq__item-head {
+    background-color: $dark;
+    color: $white;
+  }
+}
+
+[data-accordion-item="close"] {
+  .faq__item-arrow {
+    transform: rotate(180deg);
+  }
+}
+
+[data-accordion-trigger] {
+  cursor: pointer;
+}

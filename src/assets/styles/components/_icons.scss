@@ -1,6 +1,15 @@
 .icon {
   display: block;
+  flex-shrink: 0;
 
+  &.size-16 {
+    width: 16px;
+    height: 16px;
+  }
+  &.size-24 {
+    width: 24px;
+    height: 24px;
+  }
   &.size-32 {
     width: 32px;
     height: 32px;
@@ -8,6 +17,10 @@
   &.size-36 {
     width: 36px;
     height: 36px;
+  }
+  &.size-72 {
+    width: 72px;
+    height: 72px;
   }
 
   svg {

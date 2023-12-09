@@ -1,0 +1,13 @@
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  stroke: $orange-500;
+  color: $transparent;
+
+  &.active {
+    color: $orange-500;
+  }
+}
